@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title> mozabrick </title>
+
+
+
+<meta name="author" content="Лагутин Виталий">
+
+<meta charset="utf-8">
+<base href="/">
+<script>
+    // для гитхаба
+    console.log(window.location.origin);
+    if (window.location.origin === 'https://zmeygar.github.io') {
+        document.head.querySelector('base').href = 'https://zmeygar.github.io/mozabrick/';
+    }
+
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="icons/favicon.png" rel="icon">
+<!-- STYLESHEET -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.6/dist/sweetalert2.min.css" type="text/css">
+<link rel="stylesheet" href="styles/swiper.min.css" type="text/css">
+<link rel="stylesheet" href="styles/style.css" type="text/css">
+
+<!-- SCRIPTS -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.6/dist/sweetalert2.all.min.js"></script>
+<script src="scripts/swiper.min.js" defer></script>
+<script src="scripts/parallax.tilt.min.js" defer></script>
+<script src="scripts/main.min.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+    <div class="container header__container">
+
+        <div class="burger header__burger">
+            <button type="button" class="burger__btn" tabindex="1">
+                <svg>
+                    <use xlink:href="icons/sprite.svg#burger-btn"></use>
+                </svg>
+            </button>
+
+            <div id="burger-menu" class="burger__menu">
+                <div class="burger__menu-wrapper">
+                    <div class="info" tabindex="1">
+                        <button type="button" class="info__btn">
+                            <svg>
+                                <use xlink:href="icons/sprite.svg#phone"></use>
+                            </svg>
+                        </button>
+                        <div class="info__block">
+                            <a href="tel:+74951204305" class="link link--tel">+7 (495) 120-43-05</a>
+                            <p><small>Mo-So 10:00 - 20:00</small></p>
+                        </div>
+                    </div>
+
+                    <nav class="header__nav nav" data-da=".header__container, 767, last" tabindex="0">
+                        <ul class="nav__list">
+                            <li><a href="products" class="link nav__link">Katalog</a></li>
+                            <li><a href="faq" class="link nav__link">FAQ</a></li>
+                            <li><a href="#" class="link nav__link">Über uns</a></li>
+                            <li><a href="contact" class="link nav__link">Kontakte</a></li>
+                        </ul>
+                    </nav>
+
+                    <button class="header__btn btn" data-da=".header__container, 1024, first" tabindex="1">Offiziellen
+                        Website</button>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="header__logo logo" tabindex="0">
+            <svg>
+                <use xlink:href="icons/sprite.svg#logo"></use>
+            </svg>
+        </a>
+
+        <div class="info header__info" tabindex="1">
+            <button type="button" class="info__btn">
+                <svg>
+                    <use xlink:href="icons/sprite.svg#phone"></use>
+                </svg>
+            </button>
+
+            <div class="info__block">
+                <a href="tel:+74951204305" class="link link--tel">+7 (495) 120-43-05</a>
+                <p><small>Mo-So 10:00 - 20:00</small></p>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+    <main>
+        <section class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">
+                            <span class="breadcrumbs__icon">
+                                <svg>
+                                    <use xlink:href="icons/sprite.svg#arrow_back"></use>
+                                </svg>
+                            </span>
+                            Zurück zur Hauptseite
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="section checkout">
+            <div class="checkout__container container">
+                <div class="checkout__column">
+
+                    <div class="checkout__customer">
+
+                        <form class="form checkout-form">
+
+                            <fieldset class="form__fieldset">
+
+                                <legend class="checkout-form__title" data-count="1">
+                                    <h4>Persönliche Informationen</h4>
+                                </legend>
+
+                                <!-- в этот блок можно рендерить ошибки, уведомления и прочие сообщения-->
+                                <!-- info-block должен находится под title`ом-->
+                                <div class="checkout__info-block"></div>
+
+                                <div class="form__row">
+
+                                    <label class="label label--text error"
+                                        data-error-message="АХТУНГ! Закралась в угол мой какая то беда!">
+                                        Vorname
+                                        <input type="text" name="###" placeholder="Dein vorname"
+                                            onfocus="this.parentNode.classList.remove('error')">
+                                    </label>
+
+                                    <label class="label label--text">
+                                        Nachname
+                                        <input type="text" name="###" placeholder="Dein narchname">
+                                    </label>
+
+                                    <label class="label label--text">
+                                        Telefon
+                                        <input type="phone" name="###" placeholder="+4______________">
+                                    </label>
+
+                                    <label class="label label--text error">
+                                        Email
+                                        <input type="email" name="###" placeholder="___________@____"
+                                            onfocus="this.parentNode.classList.remove('error')">
+                                    </label>
+
+                                </div>
+                            </fieldset>
+                        </form>
+
+                    </div>
+
+                    <div class="checkout__shipping">
+
+                        <form class="form checkout-form">
+
+                            <fieldset class="form__fieldset">
+
+                                <legend class="checkout-form__title" data-count="2">
+                                    <h4>Lieferung</h4>
+                                </legend>
+
+                                <!-- в этот блок можно рендерить ошибки, уведомления и прочие сообщения-->
+                                <!-- info-block должен находится под title`ом-->
+                                <div class="checkout__info-block">
+
+                                    <span><b>Kostenloser versand in Deutschland und Österreich.</b></span>
+                                    <strong>
+                                        <span class="icon">
+                                            <picture><source srcset="image/delivery_icons/DHL.webp" type="image/webp"><img src="image/delivery_icons/DHL.png" alt="DHL logo"></picture>
+                                        </span>
+                                        DHL Paket
+                                    </strong>
+                                    <p>Wir liefern nach Deutschland und Österreich kostenfrei per DHL Paket, andere
+                                        Länder auf Anfrage.(Stimmen Sie den Versand mit uns per Mail ab).</p>
+                                </div>
+
+                                <div class="form__row">
+
+                                    <label class="label label--text">
+                                        Land
+                                        <input type="text" name="###" placeholder="Wähle ein Land">
+                                    </label>
+
+                                    <label class="label label--text">
+                                        Ort/Stadt
+                                        <input type="text" name="###" placeholder="Wähle eine Stadt">
+                                    </label>
+
+                                    <label class="label label--select error">
+                                        Postleitzahl
+                                        <select name="###" onclick="this.parentNode.classList.remove('error')">
+                                            <option value="###">Postleitzahl auswählen</option>
+                                            <option value="###">Postleitzahl auswählen</option>
+                                            <option value="###" selected>Selected Postleitzahl auswählen</option>
+                                            <option value="###">Postleitzahl auswählen</option>
+                                        </select>
+                                    </label>
+
+                                    <label class="label label--text">
+                                        Strasse
+                                        <input type="text" name="###" placeholder="Dein straße">
+                                    </label>
+
+                                    <label class="label label--text">
+                                        Hausnummer
+                                        <input type="text" name="###" placeholder="Dein hausnummer">
+                                    </label>
+
+                                </div>
+                            </fieldset>
+                        </form>
+
+                    </div>
+
+                    <div class="checkout__payment payment">
+
+                        <form class="form checkout-form">
+
+                            <fieldset class="form__fieldset">
+
+                                <legend class="checkout-form__title" data-count="3">
+                                    <h4>Zahlungsart</h4>
+                                </legend>
+
+                                <!-- в этот блок можно рендерить ошибки, уведомления и прочие сообщения-->
+                                <!-- info-block должен находится под title`ом-->
+                                <div class="checkout__info-block"></div>
+
+                                <ul class="payment__list">
+                                    <li class="payment__method">
+                                        <input type="radio" name="###" id="payment-1" checked>
+                                        <label class="payment__btn btn btn--fluid" for="payment-1" tabindex="0">
+                                            <span class="payment__icon"
+                                                style="background-image: url(icons/paypal.png);"></span>
+                                            PayPal
+                                        </label>
+                                    </li>
+                                    <li class="payment__method">
+                                        <input type="radio" name="###" id="payment-2">
+                                        <label class="payment__btn btn btn--fluid" for="payment-2" tabindex="0">
+                                            <span class="payment__icon"
+                                                style="background-image: url(icons/credit_card.png);"></span>
+                                            Credit Card
+                                        </label>
+                                    </li>
+                                    <li class="payment__method">
+                                        <input type="radio" name="###" id="payment-3">
+                                        <label class="payment__btn btn btn--fluid" for="payment-3" tabindex="0">
+                                            <span class="payment__icon"
+                                                style="background-image: url(icons/Bank_transfer.png);"></span>
+                                            Bank transfer
+                                        </label>
+                                    </li>
+                                    <li class="payment__method">
+                                        <input type="radio" name="###" id="payment-4">
+                                        <label class="payment__btn btn btn--fluid" for="payment-4" tabindex="0">
+                                            <span class="payment__icon"
+                                                style="background-image: url(icons/SOFORT_Banking.png);"></span>
+                                            SOFORT Banking
+                                        </label>
+                                    </li>
+                                    <li class="payment__method">
+                                        <input type="radio" name="###" id="payment-5">
+                                        <label class="payment__btn btn btn--fluid" for="payment-5" tabindex="0">
+                                            <span class="payment__icon"
+                                                style="background-image: url(icons/Klarna_Pay_Later.png);"></span>
+                                            Klarna Pay Later
+                                        </label>
+                                    </li>
+                                    <li class="payment__method">
+                                        <input type="radio" name="###" id="payment-6">
+                                        <label class="payment__btn btn btn--fluid" for="payment-6" tabindex="0">
+                                            <span class="payment__icon"
+                                                style="background-image: url(icons/Giropay.png);"></span>
+                                            Giropay
+                                        </label>
+                                    </li>
+                                </ul>
+
+                            </fieldset>
+
+                            <button type="submit" class="btn btn--accent btn--fluid btn--big checkout__btn-submit"
+                                data-tilt data-tilt-glare data-tilt-max-glare="0.3"
+                                data-da=".__submit-destination, 768,  first">Kaufen</button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="checkout__column checkout__column--totals">
+                    <div class="checkout-totals">
+                        <div class="checkout-totals__wrapper">
+
+                            <ul class="checkout-totals__cart cart-totals">
+
+                                <li class="cart-totals__item">
+                                    <div class="cart-totals__img">
+                                        <picture><source srcset="image/product/original.webp" type="image/webp"><img src="image/product/original.png" alt="Original"></picture>
+                                    </div>
+                                    <div class="cart-totals__info">
+                                        <span class="cart-totals__name">
+                                            QBRIX Solar QBRIX Solar QBRIX Solar
+                                        </span>
+                                        <span class="cart-totals__price">
+                                            69,99 EUR
+                                        </span>
+                                        <span class="cart-totals__quantity product-quantity">
+                                            <button class="product-quantity__btn increment"></button>
+                                            <input class="product-quantity__input" type="text" value="10" size="2">
+                                            <button class="product-quantity__btn decrement"></button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="cart-totals__item">
+                                    <div class="cart-totals__img">
+                                        <picture><source srcset="image/product/original.webp" type="image/webp"><img src="image/product/original.png" alt="Original"></picture>
+                                    </div>
+                                    <div class="cart-totals__info">
+                                        <span class="cart-totals__name">
+                                            QBRIX Solar
+                                        </span>
+                                        <span class="cart-totals__price">
+                                            69,99 EUR
+                                        </span>
+                                        <span class="cart-totals__quantity product-quantity">
+                                            <button class="product-quantity__btn increment"></button>
+                                            <input class="product-quantity__input" type="text" value="10" size="2">
+                                            <button class="product-quantity__btn decrement"></button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="cart-totals__item">
+                                    <div class="cart-totals__img">
+                                        <picture><source srcset="image/product/original.webp" type="image/webp"><img src="image/product/original.png" alt="Original"></picture>
+                                    </div>
+                                    <div class="cart-totals__info">
+                                        <span class="cart-totals__name">
+                                            QBRIX Solar
+                                        </span>
+                                        <span class="cart-totals__price">
+                                            69,99 EUR
+                                        </span>
+                                        <span class="cart-totals__quantity product-quantity">
+                                            <button class="product-quantity__btn increment"></button>
+                                            <input class="product-quantity__input" type="text" value="10" size="2">
+                                            <button class="product-quantity__btn decrement"></button>
+                                        </span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <div class="checkout-totals__total">
+                                <div class="total total--cart"><span>Zwischensumme</span>69,99 EUR</div>
+                                <div class="total total--cart"><span>Versandkosten</span>0,00 EUR</div>
+                                <hr>
+                                <div class="total"><span>Zzgl.19% mwst.</span>11,17 EUR</div>
+                                <div class="total"><span>Gesamtsumme ohne mwst</span>58,82 EUR</div>
+                                <div class="total total--summ"><span>Gesamtsumme</span>69,99 EUR</div>
+                            </div>
+
+                            <div class="checkout-totals__action">
+
+                                <button class="checkout-totals__coupon">
+                                    Gutschein
+                                </button>
+
+
+                                <span class="__submit-destination">
+                                    <!-- пустой элемент, куда перелетает кнопка submit на разрешении выше 578-->
+                                </span>
+
+                                <label class="label label--checkbox error"
+                                    data-error-message="АХТУНГ! Здесь закралась какая-то беда">
+                                    <input type="checkbox" name="###"
+                                        onchange="this.parentNode.classList.remove('error')">
+                                    <span class="label__text">Die Datenschutzbestimmungen und AGB habe ich zur Kenntnis
+                                        genommen.<a href="#" class="link link--agree">Datenschutz kennenlernen</a>
+                                    </span>
+
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__column">
+            <a href="#" class="logo">
+                <svg>
+                    <use xlink:href="icons/sprite.svg#logo"></use>
+                </svg>
+            </a>
+
+            <ul class="socials">
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg>
+                            <use xlink:href="icons/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg>
+                            <use xlink:href="icons/sprite.svg#instagramm"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="tel:+49082147018384" class="link link--tel footer__link">+49(0) 821 47018384</a>
+        </div>
+        <div class="footer__column">
+            <nav class="footer__nav nav">
+                <ul class="nav__list">
+                    <li><a href="#" class="link nav__link">Katalog</a></li>
+                    <li><a href="#" class="link nav__link">FAQ</a></li>
+                    <li><a href="#" class="link nav__link">Über uns</a></li>
+                    <li><a href="#" class="link nav__link">Kontakte</a></li>
+                </ul>
+            </nav>
+
+            <a href="mailto:info@apkwarenvertrieb.de" class="link link--tel footer__link">info@apkwarenvertrieb.de</a>
+        </div>
+        <div class="footer__column">
+            <p>Haben sie bereits einen QBrix-Mosaikkunstwerk gekauft?</p>
+            <button class="btn btn--accent btn--big btn--fluid">Weiter zum Layoutgenerator</button>
+            <p>Öffnungszeiten: <strong>Mo-So 10:00 - 20:00</strong></p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="container copyright__container">© 2020-2022. Alle Rechte vorbehalten. Alle auf der Website
+            veröffentlichten Waren (Bilder
+            und Beschreibungen)
+            dienen nur zu Informationszwecken und sind kein Vertrag über ein öffentliches Angebot.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

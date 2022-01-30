@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title> mozabrick </title>
+
+
+
+<meta name="author" content="Лагутин Виталий">
+
+<meta charset="utf-8">
+<base href="/">
+<script>
+    // для гитхаба
+    console.log(window.location.origin);
+    if (window.location.origin === 'https://zmeygar.github.io') {
+        document.head.querySelector('base').href = 'https://zmeygar.github.io/mozabrick/';
+    }
+
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="icons/favicon.png" rel="icon">
+<!-- STYLESHEET -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.6/dist/sweetalert2.min.css" type="text/css">
+<link rel="stylesheet" href="styles/swiper.min.css" type="text/css">
+<link rel="stylesheet" href="styles/style.css" type="text/css">
+
+<!-- SCRIPTS -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.6/dist/sweetalert2.all.min.js"></script>
+<script src="scripts/swiper.min.js" defer></script>
+<script src="scripts/parallax.tilt.min.js" defer></script>
+<script src="scripts/main.min.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+    <div class="container header__container">
+
+        <div class="burger header__burger">
+            <button type="button" class="burger__btn" tabindex="1">
+                <svg>
+                    <use xlink:href="icons/sprite.svg#burger-btn"></use>
+                </svg>
+            </button>
+
+            <div id="burger-menu" class="burger__menu">
+                <div class="burger__menu-wrapper">
+                    <div class="info" tabindex="1">
+                        <button type="button" class="info__btn">
+                            <svg>
+                                <use xlink:href="icons/sprite.svg#phone"></use>
+                            </svg>
+                        </button>
+                        <div class="info__block">
+                            <a href="tel:+74951204305" class="link link--tel">+7 (495) 120-43-05</a>
+                            <p><small>Mo-So 10:00 - 20:00</small></p>
+                        </div>
+                    </div>
+
+                    <nav class="header__nav nav" data-da=".header__container, 767, last" tabindex="0">
+                        <ul class="nav__list">
+                            <li><a href="products" class="link nav__link">Katalog</a></li>
+                            <li><a href="faq" class="link nav__link">FAQ</a></li>
+                            <li><a href="#" class="link nav__link">Über uns</a></li>
+                            <li><a href="contact" class="link nav__link">Kontakte</a></li>
+                        </ul>
+                    </nav>
+
+                    <button class="header__btn btn" data-da=".header__container, 1024, first" tabindex="1">Offiziellen
+                        Website</button>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="header__logo logo" tabindex="0">
+            <svg>
+                <use xlink:href="icons/sprite.svg#logo"></use>
+            </svg>
+        </a>
+
+        <div class="info header__info" tabindex="1">
+            <button type="button" class="info__btn">
+                <svg>
+                    <use xlink:href="icons/sprite.svg#phone"></use>
+                </svg>
+            </button>
+
+            <div class="info__block">
+                <a href="tel:+74951204305" class="link link--tel">+7 (495) 120-43-05</a>
+                <p><small>Mo-So 10:00 - 20:00</small></p>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+    <main>
+
+        <section class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">
+                            <span class="breadcrumbs__icon">
+                                <svg>
+                                    <use xlink:href="icons/sprite.svg#arrow_back"></use>
+                                </svg>
+                            </span>
+                            Zurück zur Hauptseite
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="section contact-us">
+            <div class="contact-us__container container">
+
+                <div class="contact-us__wall">
+                    <div class="contact-us__info ibg">
+
+                        <!-- img устанавливается как бекграунд скриптом ibg -->
+                        <picture><source srcset="image/contact/contact-us__bg.webp" type="image/webp"><img src="image/contact/contact-us__bg.jpg" alt="contact-us"></picture>
+
+                        <h2 class="contact-us__title">Erreiche uns</h2>
+
+
+                        <div class="contact-us__delimiter">
+                            <!-- декоративный блок -->
+                        </div>
+
+                        <div class="contact-us__body">
+                            <ul class="contact-us__site-info">
+                                <li class="contact-us__site-info-item">
+                                    <a href="tel:++49(0) 821 47018384" class="link link--tel">
+                                        <svg>
+                                            <use xlink:href="icons/sprite.svg#phone"></use>
+                                        </svg>
+                                        +49(0) 821 47018384
+                                    </a>
+                                </li>
+                                <li class="contact-us__site-info-item">
+                                    <a href="mailto:info@apkwarenvertrieb.de" class="link link--mail">
+                                        <svg>
+                                            <use xlink:href="icons/sprite.svg#mail"></use>
+                                        </svg>
+                                        info@apkwarenvertrieb.de
+                                    </a>
+                                </li>
+                                <li class="contact-us__site-info-item">
+                                    <span class="link link--open">
+                                        <svg>
+                                            <use xlink:href="icons/sprite.svg#open"></use>
+                                        </svg>
+                                        Mo-So 10:00 - 20:00
+                                    </span>
+                                </li>
+                            </ul>
+
+                            <ul class="contact-us__socials socials">
+                                <li class="socials__item">
+                                    <a href="#" class="socials__link">
+                                        <svg>
+                                            <use xlink:href="icons/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="#" class="socials__link">
+                                        <svg>
+                                            <use xlink:href="icons/sprite.svg#instagramm"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <form action="#" class="contact-us__form form">
+                        <fieldset class="form__fieldset">
+                            <legend>
+                                <h3>Fragen Sie uns etwas oder sagen Sie einfach Hallo...</h3>
+                            </legend>
+
+                            <div class="form__row">
+                                <label class="label label--text">
+                                    Vorname
+                                    <input type="text" name="###" placeholder="Dein Name">
+                                </label>
+
+                                <label class="label label--text">
+                                    Email
+                                    <input type="email" name="###" placeholder="___________@____">
+                                </label>
+                            </div>
+
+                            <div class="form__column">
+
+                                <label class="label label--textarea">
+                                    Kommentar oder Nachricht
+                                    <textarea name="###" placeholder="Schreibe deine Nachricht..."></textarea>
+                                </label>
+
+                                <label class="label label--checkbox">
+                                    <input type="checkbox" name="###">
+                                    <span class="label__text">Ich willige ein, dass diese Webseite meine übermittelten
+                                        Informationen speichert,
+                                        sodass meine Anfrage beantwortet werden kann.
+                                    </span>
+                                </label>
+
+                            </div>
+
+
+                            <button type="submit" class="btn btn--accent btn--fluid" data-tilt data-tilt-glare
+                                data-tilt-max-glare="0.3">Erreiche uns</button>
+
+
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__column">
+            <a href="#" class="logo">
+                <svg>
+                    <use xlink:href="icons/sprite.svg#logo"></use>
+                </svg>
+            </a>
+
+            <ul class="socials">
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg>
+                            <use xlink:href="icons/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg>
+                            <use xlink:href="icons/sprite.svg#instagramm"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="tel:+49082147018384" class="link link--tel footer__link">+49(0) 821 47018384</a>
+        </div>
+        <div class="footer__column">
+            <nav class="footer__nav nav">
+                <ul class="nav__list">
+                    <li><a href="#" class="link nav__link">Katalog</a></li>
+                    <li><a href="#" class="link nav__link">FAQ</a></li>
+                    <li><a href="#" class="link nav__link">Über uns</a></li>
+                    <li><a href="#" class="link nav__link">Kontakte</a></li>
+                </ul>
+            </nav>
+
+            <a href="mailto:info@apkwarenvertrieb.de" class="link link--tel footer__link">info@apkwarenvertrieb.de</a>
+        </div>
+        <div class="footer__column">
+            <p>Haben sie bereits einen QBrix-Mosaikkunstwerk gekauft?</p>
+            <button class="btn btn--accent btn--big btn--fluid">Weiter zum Layoutgenerator</button>
+            <p>Öffnungszeiten: <strong>Mo-So 10:00 - 20:00</strong></p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="container copyright__container">© 2020-2022. Alle Rechte vorbehalten. Alle auf der Website
+            veröffentlichten Waren (Bilder
+            und Beschreibungen)
+            dienen nur zu Informationszwecken und sind kein Vertrag über ein öffentliches Angebot.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

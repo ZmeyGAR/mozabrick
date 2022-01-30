@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title> mozabrick </title>
+
+
+
+<meta name="author" content="Лагутин Виталий">
+
+<meta charset="utf-8">
+<base href="/">
+<script>
+    // для гитхаба
+    console.log(window.location.origin);
+    if (window.location.origin === 'https://zmeygar.github.io') {
+        document.head.querySelector('base').href = 'https://zmeygar.github.io/mozabrick/';
+    }
+
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="icons/favicon.png" rel="icon">
+<!-- STYLESHEET -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.6/dist/sweetalert2.min.css" type="text/css">
+<link rel="stylesheet" href="styles/swiper.min.css" type="text/css">
+<link rel="stylesheet" href="styles/style.css" type="text/css">
+
+<!-- SCRIPTS -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.6/dist/sweetalert2.all.min.js"></script>
+<script src="scripts/swiper.min.js" defer></script>
+<script src="scripts/parallax.tilt.min.js" defer></script>
+<script src="scripts/main.min.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+    <div class="container header__container">
+
+        <div class="burger header__burger">
+            <button type="button" class="burger__btn" tabindex="1">
+                <svg>
+                    <use xlink:href="icons/sprite.svg#burger-btn"></use>
+                </svg>
+            </button>
+
+            <div id="burger-menu" class="burger__menu">
+                <div class="burger__menu-wrapper">
+                    <div class="info" tabindex="1">
+                        <button type="button" class="info__btn">
+                            <svg>
+                                <use xlink:href="icons/sprite.svg#phone"></use>
+                            </svg>
+                        </button>
+                        <div class="info__block">
+                            <a href="tel:+74951204305" class="link link--tel">+7 (495) 120-43-05</a>
+                            <p><small>Mo-So 10:00 - 20:00</small></p>
+                        </div>
+                    </div>
+
+                    <nav class="header__nav nav" data-da=".header__container, 767, last" tabindex="0">
+                        <ul class="nav__list">
+                            <li><a href="products" class="link nav__link">Katalog</a></li>
+                            <li><a href="faq" class="link nav__link">FAQ</a></li>
+                            <li><a href="#" class="link nav__link">Über uns</a></li>
+                            <li><a href="contact" class="link nav__link">Kontakte</a></li>
+                        </ul>
+                    </nav>
+
+                    <button class="header__btn btn" data-da=".header__container, 1024, first" tabindex="1">Offiziellen
+                        Website</button>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="header__logo logo" tabindex="0">
+            <svg>
+                <use xlink:href="icons/sprite.svg#logo"></use>
+            </svg>
+        </a>
+
+        <div class="info header__info" tabindex="1">
+            <button type="button" class="info__btn">
+                <svg>
+                    <use xlink:href="icons/sprite.svg#phone"></use>
+                </svg>
+            </button>
+
+            <div class="info__block">
+                <a href="tel:+74951204305" class="link link--tel">+7 (495) 120-43-05</a>
+                <p><small>Mo-So 10:00 - 20:00</small></p>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+    <main>
+
+        <section class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">
+                            <span class="breadcrumbs__icon">
+                                <svg>
+                                    <use xlink:href="icons/sprite.svg#arrow_back"></use>
+                                </svg>
+                            </span>
+                            Zurück zur Hauptseite
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="section faq">
+            <div class="container">
+                <h2 class="section__title">FAQ</h2>
+
+                <ul class="faq__wall">
+
+                    <li class="faq__card faq-spoiler" data-spoilers="570,min">
+
+                        <button type="button" class="faq-spoiler__btn" data-spoiler-button tabindex="0">
+                            <div class="faq-spoiler__wrapper">
+                                <h3 class="faq-spoiler__title"><span>Was ist der QBRIX Mosaikkunstwerk?</span></h3>
+                            </div>
+                        </button>
+                        <div class="faq-spoiler__content" data-spoiler-content>
+                            <div class="faq-spoiler__wrapper">
+                                <p>Das QBrix „Solar“ Mosaikkunstwerk ist in knalligen Gelb, Weinrot-- und Grautönen
+                                    gehalten. Es verwandelt Deine Fotos in einzigartige Kunstwerke, die Du anschließend
+                                    an der Wand aufhängen kannst. Ein perfektes Geschenk für Jung und Alt.
+                                </p>
+                                <p>QBrix ist ein Spaß für Klein und Groß, Jung und Alt. Jedes Set enthält 3500
+                                    Klemmbausteine, eine Grundplatte, ein Montagewerkzeug, einen Bilderrahmen und deinen
+                                    Zugangscode, mit dem Du Deine Fotos hochladen kannst und danach Deine
+                                    Aufbauanleitung direkt auf Dein Handy bekommst. Du kannst Dir die Aufbauanleitung
+                                    aber auch als PDF runterladen.
+                                </p>
+                                <p>Du kannst Dein Mosaikkunstwerk beliebig oft mit neuen Fotos und Bildern wieder
+                                    aufbauen und Dir dafür die kostenlose Aufbauanleitung aufs Handy schicken lassen.
+                                    Die Verpackungsbox kann als Bilderrahmen benutzt und an einer Wand aufgehängt
+                                    werden. Ein QBrix Mosaikkunstwerk wird immer ein Highlight an Deiner Wohnwand sein.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="faq__card faq-spoiler" data-spoilers="570,min">
+
+                        <button type="button" class="faq-spoiler__btn" data-spoiler-button tabindex="0">
+                            <div class="faq-spoiler__wrapper">
+                                <h3 class="faq-spoiler__title"><span>Welches Foto soll ich für mein Bild wählen?
+                                    </span></h3>
+                            </div>
+                        </button>
+                        <div class="faq-spoiler__content" data-spoiler-content>
+                            <div class="faq-spoiler__wrapper">
+                                <p>Sie können jedes Bild auswählen und mit dem kostenlosen Generator, vor
+                                    dem Kauf und der
+                                    Montage,
+                                    sehen, wie Ihr Bild im QBRIX-Format aussehen wird.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="faq__card faq-spoiler" data-spoilers="570,min">
+
+                        <button type="button" class="faq-spoiler__btn" data-spoiler-button tabindex="0">
+                            <div class="faq-spoiler__wrapper">
+                                <h3 class="faq-spoiler__title"><span>Was kostet der QBRIX-Baukasten?
+                                    </span></h3>
+                            </div>
+                        </button>
+                        <div class="faq-spoiler__content" data-spoiler-content>
+                            <div class="faq-spoiler__wrapper">
+                                <p>Sie können jedes Bild auswählen und mit dem kostenlosen Generator, vor
+                                    dem Kauf und der
+                                    Montage,
+                                    sehen, wie Ihr Bild im QBRIX-Format aussehen wird.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="faq__card faq-spoiler" data-spoilers="570,min">
+
+                        <button type="button" class="faq-spoiler__btn" data-spoiler-button tabindex="0">
+                            <div class="faq-spoiler__wrapper">
+                                <h3 class="faq-spoiler__title"><span>Welche Möglichkeiten zum Anbringen und Aufstellen
+                                        von QBRIX-Mosaikkunstwerk gibt es nach der Montage?
+                                    </span></h3>
+                            </div>
+                        </button>
+                        <div class="faq-spoiler__content" data-spoiler-content>
+                            <div class="faq-spoiler__wrapper">
+                                <p>Sie können jedes Bild auswählen und mit dem kostenlosen Generator, vor
+                                    dem Kauf und der
+                                    Montage,
+                                    sehen, wie Ihr Bild im QBRIX-Format aussehen wird.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="faq__card faq-spoiler" data-spoilers="570,min">
+
+                        <button type="button" class="faq-spoiler__btn" data-spoiler-button tabindex="0">
+                            <div class="faq-spoiler__wrapper">
+                                <h3 class="faq-spoiler__title"><span>Kann ich ein Teil abnehmen, wenn ich es falsch an
+                                        der Platte befestigt habe?
+                                    </span></h3>
+                            </div>
+                        </button>
+                        <div class="faq-spoiler__content" data-spoiler-content>
+                            <div class="faq-spoiler__wrapper">
+                                <p>Sie können jedes Bild auswählen und mit dem kostenlosen Generator, vor
+                                    dem Kauf und der
+                                    Montage,
+                                    sehen, wie Ihr Bild im QBRIX-Format aussehen wird.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="faq__card faq-spoiler" data-spoilers="570,min">
+
+                        <button type="button" class="faq-spoiler__btn" data-spoiler-button tabindex="0">
+                            <div class="faq-spoiler__wrapper">
+                                <h3 class="faq-spoiler__title">
+                                    <span>Wie lange dauert die Montage des QBRIX-Konstruktors?</span>
+                                </h3>
+                            </div>
+                        </button>
+                        <div class="faq-spoiler__content" data-spoiler-content>
+                            <div class="faq-spoiler__wrapper">
+                                <p>Sie können jedes Bild auswählen und mit dem kostenlosen Generator, vor
+                                    dem Kauf und der
+                                    Montage,
+                                    sehen, wie Ihr Bild im QBRIX-Format aussehen wird.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="faq__card faq-spoiler" data-spoilers="570,min">
+
+                        <button type="button" class="faq-spoiler__btn" data-spoiler-button tabindex="0">
+                            <div class="faq-spoiler__wrapper">
+                                <h3 class="faq-spoiler__title">
+                                    <span>Welche Möglichkeiten zum Anbringen und Aufstellen von QBRIX-Mosaikkunstwerk
+                                        gibt es nach der Montage? </span>
+                                </h3>
+                            </div>
+                        </button>
+                        <div class="faq-spoiler__content" data-spoiler-content>
+                            <div class="faq-spoiler__wrapper">
+                                <p>Sie können jedes Bild auswählen und mit dem kostenlosen Generator, vor
+                                    dem Kauf und der
+                                    Montage,
+                                    sehen, wie Ihr Bild im QBRIX-Format aussehen wird.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__column">
+            <a href="#" class="logo">
+                <svg>
+                    <use xlink:href="icons/sprite.svg#logo"></use>
+                </svg>
+            </a>
+
+            <ul class="socials">
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg>
+                            <use xlink:href="icons/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg>
+                            <use xlink:href="icons/sprite.svg#instagramm"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="tel:+49082147018384" class="link link--tel footer__link">+49(0) 821 47018384</a>
+        </div>
+        <div class="footer__column">
+            <nav class="footer__nav nav">
+                <ul class="nav__list">
+                    <li><a href="#" class="link nav__link">Katalog</a></li>
+                    <li><a href="#" class="link nav__link">FAQ</a></li>
+                    <li><a href="#" class="link nav__link">Über uns</a></li>
+                    <li><a href="#" class="link nav__link">Kontakte</a></li>
+                </ul>
+            </nav>
+
+            <a href="mailto:info@apkwarenvertrieb.de" class="link link--tel footer__link">info@apkwarenvertrieb.de</a>
+        </div>
+        <div class="footer__column">
+            <p>Haben sie bereits einen QBrix-Mosaikkunstwerk gekauft?</p>
+            <button class="btn btn--accent btn--big btn--fluid">Weiter zum Layoutgenerator</button>
+            <p>Öffnungszeiten: <strong>Mo-So 10:00 - 20:00</strong></p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="container copyright__container">© 2020-2022. Alle Rechte vorbehalten. Alle auf der Website
+            veröffentlichten Waren (Bilder
+            und Beschreibungen)
+            dienen nur zu Informationszwecken und sind kein Vertrag über ein öffentliches Angebot.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

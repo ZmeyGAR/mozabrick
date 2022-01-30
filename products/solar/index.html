@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title> mozabrick </title>
+
+
+
+<meta name="author" content="Лагутин Виталий">
+
+<meta charset="utf-8">
+<base href="/">
+<script>
+    // для гитхаба
+    console.log(window.location.origin);
+    if (window.location.origin === 'https://zmeygar.github.io') {
+        document.head.querySelector('base').href = 'https://zmeygar.github.io/mozabrick/';
+    }
+
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="icons/favicon.png" rel="icon">
+<!-- STYLESHEET -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.6/dist/sweetalert2.min.css" type="text/css">
+<link rel="stylesheet" href="styles/swiper.min.css" type="text/css">
+<link rel="stylesheet" href="styles/style.css" type="text/css">
+
+<!-- SCRIPTS -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.6/dist/sweetalert2.all.min.js"></script>
+<script src="scripts/swiper.min.js" defer></script>
+<script src="scripts/parallax.tilt.min.js" defer></script>
+<script src="scripts/main.min.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+    <div class="container header__container">
+
+        <div class="burger header__burger">
+            <button type="button" class="burger__btn" tabindex="1">
+                <svg>
+                    <use xlink:href="icons/sprite.svg#burger-btn"></use>
+                </svg>
+            </button>
+
+            <div id="burger-menu" class="burger__menu">
+                <div class="burger__menu-wrapper">
+                    <div class="info" tabindex="1">
+                        <button type="button" class="info__btn">
+                            <svg>
+                                <use xlink:href="icons/sprite.svg#phone"></use>
+                            </svg>
+                        </button>
+                        <div class="info__block">
+                            <a href="tel:+74951204305" class="link link--tel">+7 (495) 120-43-05</a>
+                            <p><small>Mo-So 10:00 - 20:00</small></p>
+                        </div>
+                    </div>
+
+                    <nav class="header__nav nav" data-da=".header__container, 767, last" tabindex="0">
+                        <ul class="nav__list">
+                            <li><a href="products" class="link nav__link">Katalog</a></li>
+                            <li><a href="faq" class="link nav__link">FAQ</a></li>
+                            <li><a href="#" class="link nav__link">Über uns</a></li>
+                            <li><a href="contact" class="link nav__link">Kontakte</a></li>
+                        </ul>
+                    </nav>
+
+                    <button class="header__btn btn" data-da=".header__container, 1024, first" tabindex="1">Offiziellen
+                        Website</button>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="header__logo logo" tabindex="0">
+            <svg>
+                <use xlink:href="icons/sprite.svg#logo"></use>
+            </svg>
+        </a>
+
+        <div class="info header__info" tabindex="1">
+            <button type="button" class="info__btn">
+                <svg>
+                    <use xlink:href="icons/sprite.svg#phone"></use>
+                </svg>
+            </button>
+
+            <div class="info__block">
+                <a href="tel:+74951204305" class="link link--tel">+7 (495) 120-43-05</a>
+                <p><small>Mo-So 10:00 - 20:00</small></p>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+    <main>
+
+        <section class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">
+                            <span class="breadcrumbs__icon">
+                                <svg>
+                                    <use xlink:href="icons/sprite.svg#arrow_back"></use>
+                                </svg>
+                            </span>
+                            Zurück zur Hauptseite
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="section product">
+    <div class="container">
+        <div class="product-page">
+
+            <div class="product-page__galery product-galery">
+
+                <!-- product-galery__main-slider -->
+                <div class="swiper product-galery__main-slider">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.3">
+                            <div class="swiper-slider__img">
+                                <picture><source srcset="image/examples/Liebesgeschichten-1.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-1.jpg" alt="example_1"></picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.3">
+                            <div class="swiper-slider__img">
+                                <picture><source srcset="image/examples/Liebesgeschichten-2.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-2.jpg" alt="example_1"></picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.3">
+                            <div class="swiper-slider__img">
+                                <picture><source srcset="image/examples/Liebesgeschichten-3.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-3.jpg" alt="example_1"></picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.3">
+                            <div class="swiper-slider__img">
+                                <picture><source srcset="image/examples/Liebesgeschichten-4.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-4.jpg" alt="example_1"></picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.3">
+                            <div class="swiper-slider__img">
+                                <picture><source srcset="image/examples/Liebesgeschichten-1.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-1.jpg" alt="example_1"></picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.3">
+                            <div class="swiper-slider__img">
+                                <picture><source srcset="image/examples/Liebesgeschichten-2.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-2.jpg" alt="example_1"></picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.3">
+                            <div class="swiper-slider__img">
+                                <picture><source srcset="image/examples/Liebesgeschichten-3.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-3.jpg" alt="example_1"></picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.3">
+                            <div class="swiper-slider__img">
+                                <picture><source srcset="image/examples/Liebesgeschichten-4.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-4.jpg" alt="example_1"></picture>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="product-galery__thumb-slider thumb-slider">
+                    <!-- product-galery__thumb-slider -->
+                    <div class="swiper thumb-slider__slider">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slider__img">
+                                    <picture><source srcset="image/examples/Liebesgeschichten-1.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-1.jpg" alt="example_1"></picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slider__img">
+                                    <picture><source srcset="image/examples/Liebesgeschichten-2.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-2.jpg" alt="example_1"></picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slider__img">
+                                    <picture><source srcset="image/examples/Liebesgeschichten-3.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-3.jpg" alt="example_1"></picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slider__img">
+                                    <picture><source srcset="image/examples/Liebesgeschichten-4.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-4.jpg" alt="example_1"></picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slider__img">
+                                    <picture><source srcset="image/examples/Liebesgeschichten-1.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-1.jpg" alt="example_1"></picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slider__img">
+                                    <picture><source srcset="image/examples/Liebesgeschichten-2.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-2.jpg" alt="example_1"></picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slider__img">
+                                    <picture><source srcset="image/examples/Liebesgeschichten-3.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-3.jpg" alt="example_1"></picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slider__img">
+                                    <picture><source srcset="image/examples/Liebesgeschichten-4.webp" type="image/webp"><img src="image/examples/Liebesgeschichten-4.jpg" alt="example_1"></picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="thumb-slider__more-link"
+                        style="background:url(image/product/more_link.png) 50% 50%/100% no-repeat;">
+                        <span>+5 Fotos</span>
+                    </a>
+                </div>
+
+                <script type="text/javascript">
+
+                    const moreLink = document.querySelector('.thumb-slider__more-link');
+                    moreLink.addEventListener('click', showImages)
+
+                    function showImages(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const images = [...document.querySelectorAll('.product-galery__main-slider img')];
+                        showImage(images, 0)
+                    }
+
+                    function showImage(imageCollection, index) {
+                        const img = imageCollection[index];
+                        if (!img) return;
+
+                        let prevDisable = false,
+                            nextDisable = false;
+
+                        if (index - 1 === -1) prevDisable = true;
+                        if (index + 1 === imageCollection.length) nextDisable = true;
+
+                        Swal.fire({
+                            width: 600,
+                            imageUrl: img.src,
+                            imageHeight: 500,
+                            imageWidth: 500,
+                            imageAlt: img.alt,
+
+                            showConfirmButton: (nextDisable && prevDisable) ? false : true,
+                            showCancelButton: (nextDisable && prevDisable) ? false : true,
+                            showCloseButton: true,
+
+                            confirmButtonText: '',
+                            confirmButtonAriaLabel: 'Next slide',
+
+                            cancelButtonText: '',
+                            cancelButtonAriaLabel: 'Previously slide',
+
+                            reverseButtons: true,
+                            buttonsStyling: false,
+                            customClass: {
+                                confirmButton: 'btn btn--accent btn--next' + (nextDisable ? ' btn--disable' : ''),
+                                cancelButton: 'btn btn--accent btn--prev' + (prevDisable ? ' btn--disable' : ''),
+                                image: 'img--contain'
+                            },
+
+                        }).then(result => {
+                            if (result.dismiss === 'backdrop' || result.dismiss === 'close') {
+                                return;
+                            } else if (result.isConfirmed) {
+                                showImage(imageCollection, ++index)
+                            } else if (result.isDismissed) {
+                                showImage(imageCollection, --index)
+                            }
+                        })
+
+                    }
+
+
+                </script>
+
+            </div>
+
+            <div class="product-page__tools product-tools">
+                <div class="product-tools__header">
+                    <h1 class="product-tools__title">QBRIX Solar</h1>
+                    <span class="product-tools__stock-status">AUF LAGER</span>
+                </div>
+
+                <ul class="product-tools__attributes">
+                    <li>Gewicht: <strong>1380 gr</strong></li>
+                    <li>Verpackungsgröße HxBxT: <strong>440х445х30mm</strong></li>
+                    <li>Teilezahl: <strong>3502 Teile</strong></li>
+                    <li>Montagezeit: <strong>ca. 6 Stunden</strong></li>
+                    <li>Zusammengebaute Gemäldegröße: <strong>44х44 cm</strong></li>
+                    <li>Altersempfehlung: <strong>14+</strong></li>
+                </ul>
+
+                <ul class="product-tools__related-products related-products">
+
+                    <li class="related-products__item" data-tilt data-tilt-glare data-tilt-max-tilt="1">
+                        <a href="#" class="related-products__link">
+                            <div class="related-products__img">
+                                <picture><source srcset="image/product/original.webp" type="image/webp"><img src="image/product/original.png" alt="original"></picture>
+                            </div>
+                            <div class="related-products__name">
+                                original
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="related-products__item" data-tilt data-tilt-glare data-tilt-max-tilt="1">
+                        <a href="#" class="related-products__link">
+                            <div class="related-products__img">
+                                <picture><source srcset="image/product/solar.webp" type="image/webp"><img src="image/product/solar.png" alt="original"></picture>
+                            </div>
+                            <div class="related-products__name">
+                                solar
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="related-products__item" data-tilt data-tilt-glare data-tilt-max-tilt="1">
+                        <a href="#" class="related-products__link">
+                            <div class="related-products__img">
+                                <picture><source srcset="image/product/poster.webp" type="image/webp"><img src="image/product/poster.png" alt="original"></picture>
+                            </div>
+                            <div class="related-products__name">
+                                poster
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="product-tools__delivery-info delivery-info">
+                    <strong> Lieferung: </strong>
+                    <span> Deutschland; Österreich</span>
+                    <strong>
+                        <span class="icon">
+                            <picture><source srcset="image/delivery_icons/DHL.webp" type="image/webp"><img src="image/delivery_icons/DHL.png" alt="DHL logo"></picture>
+                        </span>
+                        DHL Paket
+                    </strong>
+                </div>
+
+                <div class="product-tools__footer">
+                    <button class="btn btn--accent btn--fluid product-page__btn-cart" data-tilt data-tilt-glare
+                        data-tilt-max-glare="0.4">Kaufen</button>
+
+                    <div class="product-page__price">
+                        <span class="product-page__price--price">80 EUR</span>
+                        <span class="product-page__price--special">69,99 EUR</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-page__info product-info">
+
+                <ul class="product-info__package-content package-content">
+                    <h3 class="product-info__title">Packungsinhalt:</h3>
+                    <li class="package-content__item">Anleitung mit Code</li>
+                    <li class="package-content__item">9 Felder 32x32 Noppen</li>
+                    <li class="package-content__item">18 Montageplatten 6x6 Noppen</li>
+                    <li class="package-content__item">5 Farben zu je 2900 Klemmbausteine</li>
+                    <li class="package-content__item">Demontageschlüssel </li>
+                    <li class="package-content__item">Mozabrick Logo-Fliese</li>
+                    <li class="package-content__item">Ein doppelseitiges 3M-Klebeband zum Anbringen eines Bildes an der
+                        Wand</li>
+                </ul>
+
+                <div class="product-info__description">
+                    <h3 class="product-info__title">Beschreibung:</h3>
+                    <p>Mögen Sie Pixelkunst? Gefallen Ihnen Originalfotos? Sind Sie auf der Suche nach einer Idee für
+                        ein
+                        ungewöhnliches Geschenk? In all diesen Fällen ist der Mozabrick Foto-Baukasten genau das
+                        Richtige
+                        für Sie!
+                    </p>
+
+                    <p>Hier ist eine der außergewöhnlichsten Neuheiten des Jahres 2020: Ein universelles Super-Puzzle,
+                        mit
+                        dem Sie jedes Foto in ein cooles Bild im s/w-Pixelkunststil verwandeln können. Nur 3 einfache
+                        Schritte:
+                    </p>
+
+                    <p>Kaufen Sie einen Baukasten (es gibt zwei Größen: 51 x 51 cm und 76 x 76 cm);
+                        Laden Sie Ihr Foto auf unserer Webseite hoch und erhalten Sie Anweisungen zum Zusammensetzen des
+                        Mosaiks;
+                        Setzen Sie das Puzzle zusammen und genießen Sie, wie cool Ihr Lieblingsfoto aussieht!
+                        Und das Sahnehäupchen: Mozabrick kann so oft umgebaut werden, wie Sie möchten! Langweilt Sie das
+                        Bild? Demontieren Sie es, wählen Sie ein neues Foto aus, laden Sie es auf die Webseite, setzen
+                        Sie
+                        es zusammen - bei Bedarf einfach wiederholen.
+                    </p>
+
+
+
+
+
+                </div>
+
+                <a href="#" class="product-info__banner banner-product">
+                    <div class="banner-product__img">
+                        <picture><source srcset="image/product/banner.webp" type="image/webp"><img src="image/product/banner.png" alt="Banner"></picture>
+                    </div>
+                    <div class="banner-product__text">
+                        Gönnen Sie sich und Ihren Lieben mit Qbrix unendlich viele positive Emotionen!
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-page__attributes product-attributes">
+                <ul class="product-attributes__list">
+                    <li class="product-attributes__item" data-icon="delivery">
+                        <strong>Lieferung</strong>
+                        <p>Deutschland; Österreich</p>
+                    </li>
+                    <li class="product-attributes__item" data-icon="drop-shipping">
+                        <strong>Direktlieferung</strong>
+                        <p>Deutschland; Österreich</p>
+                    </li>
+                    <li class="product-attributes__item" data-icon="payment">
+                        <strong>Zahlung</strong>
+                        <p>PayPal, Überweisung, Kreditkarte, SOFORT Überweisung, Giropay, Apple Pay</p>
+                    </li>
+                    <li class="product-attributes__item" data-icon="delivery-time">
+                        <strong>14 Tage</strong>
+                        <p>Rückgaberecht</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+        <section class="section reviews">
+    <div class="container reviews__container">
+        <div class="reviews__wall">
+
+
+            <ul class="reviews__list">
+
+                <h2 class="section__title reviews__title">Bewertungen</h2>
+
+
+                <!-- Slider main container -->
+                <div class="swiper reviews__slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <li class="review">
+                                <div class="review__images mini-galery" onclick="this.classList.toggle('expanded')">
+                                    <div class="mini-galery__wrapper">
+
+                                        <picture><source srcset="image/reviews/review_1.webp" type="image/webp"><img src="image/reviews/review_1.jpg" alt="review_1"></picture>
+
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <span class="review__author">Katharina</span>
+                                    <p class="review__text">Wir haben mit dem Ehemann begonnen den Baukasten
+                                        zusammenzustellen, das
+                                        hat ihm so gut
+                                        gefallen, dass ich beschlossen habe ihm nicht im Wege zu stehen. Er hat alles
+                                        selbst
+                                        zusammengestellt. Wir wissen noch nicht, wo wir ihn hängen werden. Die Idee ist
+                                        toll, ich
+                                        empfehle zu kaufen.</p>
+                                </div>
+                            </li>
+                            <li class="review">
+                                <div class="review__images mini-galery" onclick="this.classList.toggle('expanded')">
+                                    <div class="mini-galery__wrapper">
+
+                                        <picture><source srcset="image/reviews/review_7.webp" type="image/webp"><img src="image/reviews/review_7.jpg" alt="review_1"></picture>
+                                        <picture><source srcset="image/reviews/review_7-1.webp" type="image/webp"><img src="image/reviews/review_7-1.jpg" alt="review_1"></picture>
+
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <span class="review__author">Thomas</span>
+                                    <p class="review__text">Diesen Baukasten haben die Freunde empfohlen, ich habe
+                                        beschlossen ihn der Ehefrau zu schenken. Der Baukasten hat gefallen, ich stelle
+                                        5 Punkte.</p>
+                                </div>
+                            </li>
+                            <li class="review">
+                                <div class="review__images mini-galery" onclick="this.classList.toggle('expanded')">
+                                    <div class="mini-galery__wrapper">
+                                        <picture><source srcset="image/reviews/review_8.webp" type="image/webp"><img src="image/reviews/review_8.jpg" alt="review_1"></picture>
+                                        <picture><source srcset="image/reviews/review_8-1.webp" type="image/webp"><img src="image/reviews/review_8-1.jpg" alt="review_1"></picture>
+                                        <picture><source srcset="image/reviews/review_8-2.webp" type="image/webp"><img src="image/reviews/review_8-2.jpg" alt="review_1"></picture>
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <span class="review__author">Marina</span>
+                                    <p class="review__text">Eine tolle Idee, ein angenehmer Prozess und ein wunderbares
+                                        Ergebnis!</p>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="review">
+                                <div class="review__images mini-galery" onclick="this.classList.toggle('expanded')">
+                                    <div class="mini-galery__wrapper">
+                                        <picture><source srcset="image/reviews/review_2.webp" type="image/webp"><img src="image/reviews/review_2.png" alt="review_1"></picture>
+                                        <picture><source srcset="image/reviews/review_2-1.webp" type="image/webp"><img src="image/reviews/review_2-1.jpg" alt="review_1"></picture>
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <span class="review__author">Peter Wohlgemuth</span>
+                                    <p class="review__text">Pure Begeisterung ! Ich habe es sehr genossen, abends vor
+                                        dem TV da die vergangenen Tage so vor mich hin zu klemmen . Dadurch dass in der
+                                        erstellten PDF-Anleitung immer die Anzahl der benötigten Bricks, welche
+                                        hintereinander in der gleichen Farbe geklemmt werden sollen, angegeben ist -
+                                        muss man sich dabei nicht großartig konzentrieren. Und was soll ich sagen: Das
+                                        Endergebnis ist gleich beim ersten Versuch schon wirklich genial geworden -
+                                        meiner Meinung nach. Da ich mich dem Wunsch meiner Frau kaum widersetzen kann,
+                                        werde ich das Bild in den kommenden Tagen wieder zerlegen. Dann wandle ich ein
+                                        Foto unserer Katze um - und stelle meiner Frau alles bereit.</p>
+                                </div>
+                            </li>
+                            <li class="review">
+                                <div class="review__images mini-galery" onclick="this.classList.toggle('expanded')">
+                                    <div class="mini-galery__wrapper">
+
+                                        <picture><source srcset="image/reviews/review_3.webp" type="image/webp"><img src="image/reviews/review_3.jpg" alt="review_1"></picture>
+
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <span class="review__author">Fabienne M.</span>
+                                    <p class="review__text">Ich finde das Produkt sehr toll und vielfältig, anfangs
+                                        hatte ich meine Probleme mit dem Code jedoch wurde mir sehr schnell weiter
+                                        geholfen und das Problem gelöst. Falls jemand ein ähnliches Problem haben
+                                        sollte: einfach mal versuchen den Buchstaben O durch die Zahl 0 (oder
+                                        andersherum) zu ersetzten ;) Immer wieder gerne!</p>
+                                </div>
+                            </li>
+                            <li class="review">
+                                <div class="review__images mini-galery" onclick="this.classList.toggle('expanded')">
+                                    <div class="mini-galery__wrapper">
+                                        <picture><source srcset="image/reviews/review_4.webp" type="image/webp"><img src="image/reviews/review_4.png" alt="review_1"></picture>
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <span class="review__author">Andreas</span>
+                                    <p class="review__text">Sehr schöne Idee, sieht auch gut aus. Man kann auch zu zweit
+                                        gut daran arbeiten. Mit der angegebenen Aufbauzeit kommt man locker hin!</p>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="review">
+                                <div class="review__images mini-galery" onclick="this.classList.toggle('expanded')">
+                                    <div class="mini-galery__wrapper">
+
+                                        <picture><source srcset="image/reviews/review_1.webp" type="image/webp"><img src="image/reviews/review_1.jpg" alt="review_1"></picture>
+
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <span class="review__author">Katharina</span>
+                                    <p class="review__text">Wir haben mit dem Ehemann begonnen den Baukasten
+                                        zusammenzustellen, das
+                                        hat ihm so gut
+                                        gefallen, dass ich beschlossen habe ihm nicht im Wege zu stehen. Er hat alles
+                                        selbst
+                                        zusammengestellt. Wir wissen noch nicht, wo wir ihn hängen werden. Die Idee ist
+                                        toll, ich
+                                        empfehle zu kaufen.</p>
+                                </div>
+                            </li>
+                            <li class="review">
+                                <div class="review__images mini-galery" onclick="this.classList.toggle('expanded')">
+                                    <div class="mini-galery__wrapper">
+
+                                        <picture><source srcset="image/reviews/review_5.webp" type="image/webp"><img src="image/reviews/review_5.jpg" alt="review_1"></picture>
+
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <span class="review__author">Matthias Schwaighofer</span>
+                                    <p class="review__text">Video Review auf Youtube gemacht:
+                                        https://youtu.be/xzCClC5elVA</p>
+                                </div>
+                            </li>
+                            <li class="review">
+                                <div class="review__images mini-galery" onclick="this.classList.toggle('expanded')">
+                                    <div class="mini-galery__wrapper">
+                                        <picture><source srcset="image/reviews/review_6.webp" type="image/webp"><img src="image/reviews/review_6.jpg" alt="review_1"></picture>
+                                        <picture><source srcset="image/reviews/review_6-1.webp" type="image/webp"><img src="image/reviews/review_6-1.jpg" alt="review_1"></picture>
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <span class="review__author">Sven Gadget</span>
+                                    <p class="review__text">Das Ergebnis ist sehr gut geworden. Die Teilequalität ist
+                                        super und es hat Spaß gemacht. Auch der Ablauf vom Karton bis zum Mosaik war
+                                        sehr gut erklärt und hat super funktioniert. Ich habe ein Video Review auf
+                                        Youtube gemacht: https://youtu.be/oRVRQ8f-Lq8</p>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="review">
+                                <div class="review__images mini-galery" onclick="this.classList.toggle('expanded')">
+                                    <div class="mini-galery__wrapper">
+
+                                        <picture><source srcset="image/reviews/review_9.webp" type="image/webp"><img src="image/reviews/review_9.jpg" alt="review_1"></picture>
+                                        <picture><source srcset="image/reviews/review_9-1.webp" type="image/webp"><img src="image/reviews/review_9-1.jpg" alt="review_1"></picture>
+
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <span class="review__author">Sebastian</span>
+                                    <p class="review__text">Ich habe meiner Geliebten ein Geschenk gemacht, aber habe
+                                        selbst zusammengestellt. Es ist mir gelungen sie zu überraschen und zu freuen
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="review">
+                                <div class="review__images mini-galery" onclick="this.classList.toggle('expanded')">
+                                    <div class="mini-galery__wrapper">
+
+                                    </div>
+                                </div>
+                                <div class="review__body">
+                                    <span class="review__author">Björn</span>
+                                    <p class="review__text">Super innovatives Produkt! Da können sich manche andere
+                                        Hersteller bei Preis und Qualität was abschauen. Bin sehr begeistert von der
+                                        hohen Qualität. Habe mehrere Sets und bereits mehrfach neu gestaltet. Grade im
+                                        Herbst/Winter eine tolle Beschäftigung.</p>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <button class="reviews__new btn btn--fluid">Bewertung hinterlassen</button>
+
+                <script type="text/javascript">
+                    const newReviewButtons = [...document.querySelectorAll('button.reviews__new')];
+                    const reviewImages = [...document.querySelectorAll('.mini-galery__wrapper')]
+
+                    reviewImages.forEach(img => img.addEventListener('click', showImages))
+
+
+                    newReviewButtons.forEach(btn => btn.addEventListener('click', newReview));
+
+                    const template = `
+                    <form class="form popup-form">
+                        <fieldset class="form__fieldset popup-form__fieldset">
+
+                            <div class="form__row">
+                                <div class="form__row popup-form__row">
+                                    <label class="label label--text">
+                                        Vorname
+                                        <input type="text" name="###" placeholder="Dein Name">
+                                    </label>
+
+                                    <label class="label label--text">
+                                        Email
+                                        <input type="email" name="###" placeholder="___________@____">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form__row popup-form__row">
+                                <label class="label label--textarea error"
+                                    data-error-message="АХТУНГ! НАДО СЮДА ЧТО НИБУДЬ НАПИСАТЬ">
+                                    Produktbewertung
+                                    <textarea name="###" placeholder="Hinterlassen produktbewertung..."
+                                        onfocus="this.parentNode.classList.remove('error')"></textarea>
+                                </label>
+                            </div>
+
+                            <div class="form__row popup-form__row">
+                                <label class="label label--checkbox">
+                                    <input type="checkbox" name="###">
+                                    <span class="label__text">Ich willige ein, dass diese Webseite meine übermittelten
+                                        Informationen speichert,
+                                        sodass meine Anfrage beantwortet werden kann.
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form__row popup-form__row uploader">
+                                <div class="uploader__wrapper">
+                                    <button type="button" class="uploader__icon">
+                                        <svg>
+                                            <use xlink:href="icons/sprite.svg#download"></use>
+                                        </svg>
+                                    </button>
+                                    <label class="btn btn--label" tabindex="0">
+                                        <input type="file"></input>
+                                        Hängen Sie ein Bild an</label>
+                                </div>
+
+                                <ul class="uploader__files uploader-files">
+                                    <li class="uploader-files__item">
+                                        <div class="file">
+                                            <div class="file__icon"></div>
+                                        </div>
+                                        <div class="file__info">
+                                            <span class="file__name">Foto1.img</span>
+                                            <span class="file__size">25 кб</span>
+                                        </div>
+
+                                        <button type="button" class="file__delete"></button>
+                                    </li>
+                                    <li class="uploader-files__item">
+                                        <div class="file">
+                                            <div class="file__icon"></div>
+                                        </div>
+                                        <div class="file__info">
+                                            <span class="file__name">Foto1.img</span>
+                                            <span class="file__size">25 кб</span>
+                                        </div>
+
+                                        <button type="button" class="file__delete"></button>
+                                    </li>
+                                    <li class="uploader-files__item">
+                                        <div class="file">
+                                            <div class="file__icon"></div>
+                                        </div>
+                                        <div class="file__info">
+                                            <span class="file__name">Foto1.img</span>
+                                            <span class="file__size">25 кб</span>
+                                        </div>
+
+                                        <button type="button" class="file__delete"></button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                    `;
+
+                    function newReview(e) {
+                        Swal.fire({
+
+                            title: 'Hinterlassen produktbewertung',
+                            width: 880,
+                            html: template,
+
+                            showCloseButton: true,
+                            confirmButtonText: 'Weiter zu Produkten',
+                            buttonsStyling: false,
+                            customClass: {
+                                actions: 'form__row popup-form__row',
+                                confirmButton: 'btn btn--accent btn--big swal2-confirm',
+                            },
+                        })
+                    }
+
+                    function showImages(e) {
+                        const target = e.target;
+                        const parent = target.closest('.mini-galery__wrapper');
+                        const imageCollection = [...parent.querySelectorAll('img')]
+                        showImage(imageCollection, 0)
+                    }
+
+                    function showImage(imageCollection, index) {
+                        const img = imageCollection[index];
+                        if (!img) return;
+
+                        let prevDisable = false,
+                            nextDisable = false;
+
+                        if (index - 1 === -1) prevDisable = true;
+                        if (index + 1 === imageCollection.length) nextDisable = true;
+
+                        Swal.fire({
+                            width: 600,
+                            imageUrl: img.src,
+                            imageHeight: 500,
+                            imageWidth: 500,
+                            imageAlt: img.alt,
+
+                            showConfirmButton: (nextDisable && prevDisable) ? false : true,
+                            showCancelButton: (nextDisable && prevDisable) ? false : true,
+                            showCloseButton: true,
+
+                            confirmButtonText: '',
+                            confirmButtonAriaLabel: 'Next slide',
+
+                            cancelButtonText: '',
+                            cancelButtonAriaLabel: 'Previously slide',
+
+                            reverseButtons: true,
+                            buttonsStyling: false,
+                            customClass: {
+                                confirmButton: 'btn btn--accent btn--next' + (nextDisable ? ' btn--disable' : ''),
+                                cancelButton: 'btn btn--accent btn--prev' + (prevDisable ? ' btn--disable' : ''),
+                                image: 'img--contain'
+                            },
+
+                        }).then(result => {
+                            if (result.dismiss === 'backdrop' || result.dismiss === 'close') {
+                                return;
+                            } else if (result.isConfirmed) {
+                                showImage(imageCollection, ++index)
+                            } else if (result.isDismissed) {
+                                showImage(imageCollection, --index)
+                            }
+                        })
+
+                    }
+
+
+                </script>
+            </ul>
+
+        </div>
+    </div>
+</section>
+
+<!-- <section class="section popup">
+    <div class="popup__wrapper">
+        <form class="form popup-form">
+            <fieldset class="form__fieldset popup-form__fieldset">
+
+                <div class="form__row">
+                    <div class="form__row popup-form__row">
+                        <label class="label label--text">
+                            Vorname
+                            <input type="text" name="###" placeholder="Dein Name">
+                        </label>
+
+                        <label class="label label--text">
+                            Email
+                            <input type="email" name="###" placeholder="___________@____">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form__row popup-form__row">
+                    <label class="label label--textarea error"
+                        data-error-message="АХТУНГ! НАДО СЮДА ЧТО НИБУДЬ НАПИСАТЬ">
+                        Produktbewertung
+                        <textarea name="###" placeholder="Hinterlassen produktbewertung..."
+                            onfocus="this.parentNode.classList.remove('error')"></textarea>
+                    </label>
+                </div>
+
+                <div class="form__row popup-form__row">
+                    <label class="label label--checkbox">
+                        <input type="checkbox" name="###">
+                        <span class="label__text">Ich willige ein, dass diese Webseite meine übermittelten
+                            Informationen speichert,
+                            sodass meine Anfrage beantwortet werden kann.
+                        </span>
+                    </label>
+                </div>
+
+                <div class="form__row popup-form__row uploader">
+                    <div class="uploader__wrapper">
+                        <button type="button" class="uploader__icon">
+                            <svg>
+                                <use xlink:href="icons/sprite.svg#download"></use>
+                            </svg>
+                        </button>
+                        <label class="btn btn--label" tabindex="0">
+                            <input type="file"></input>
+                            Hängen Sie ein Bild an</label>
+                    </div>
+
+                    <ul class="uploader__files uploader-files">
+                        <li class="uploader-files__item">
+                            <div class="file">
+                                <div class="file__icon"></div>
+                            </div>
+                            <div class="file__info">
+                                <span class="file__name">Foto1.img</span>
+                                <span class="file__size">25 кб</span>
+                            </div>
+
+                            <button type="button" class="file__delete"></button>
+                        </li>
+                        <li class="uploader-files__item">
+                            <div class="file">
+                                <div class="file__icon"></div>
+                            </div>
+                            <div class="file__info">
+                                <span class="file__name">Foto1.img</span>
+                                <span class="file__size">25 кб</span>
+                            </div>
+
+                            <button type="button" class="file__delete"></button>
+                        </li>
+                        <li class="uploader-files__item">
+                            <div class="file">
+                                <div class="file__icon"></div>
+                            </div>
+                            <div class="file__info">
+                                <span class="file__name">Foto1.img</span>
+                                <span class="file__size">25 кб</span>
+                            </div>
+
+                            <button type="button" class="file__delete"></button>
+                        </li>
+                    </ul>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</section> -->
+
+    </main>
+
+    <footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__column">
+            <a href="#" class="logo">
+                <svg>
+                    <use xlink:href="icons/sprite.svg#logo"></use>
+                </svg>
+            </a>
+
+            <ul class="socials">
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg>
+                            <use xlink:href="icons/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg>
+                            <use xlink:href="icons/sprite.svg#instagramm"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="tel:+49082147018384" class="link link--tel footer__link">+49(0) 821 47018384</a>
+        </div>
+        <div class="footer__column">
+            <nav class="footer__nav nav">
+                <ul class="nav__list">
+                    <li><a href="#" class="link nav__link">Katalog</a></li>
+                    <li><a href="#" class="link nav__link">FAQ</a></li>
+                    <li><a href="#" class="link nav__link">Über uns</a></li>
+                    <li><a href="#" class="link nav__link">Kontakte</a></li>
+                </ul>
+            </nav>
+
+            <a href="mailto:info@apkwarenvertrieb.de" class="link link--tel footer__link">info@apkwarenvertrieb.de</a>
+        </div>
+        <div class="footer__column">
+            <p>Haben sie bereits einen QBrix-Mosaikkunstwerk gekauft?</p>
+            <button class="btn btn--accent btn--big btn--fluid">Weiter zum Layoutgenerator</button>
+            <p>Öffnungszeiten: <strong>Mo-So 10:00 - 20:00</strong></p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="container copyright__container">© 2020-2022. Alle Rechte vorbehalten. Alle auf der Website
+            veröffentlichten Waren (Bilder
+            und Beschreibungen)
+            dienen nur zu Informationszwecken und sind kein Vertrag über ein öffentliches Angebot.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
