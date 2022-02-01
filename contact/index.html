@@ -71,8 +71,8 @@
                         </ul>
                     </nav>
 
-                    <button class="header__btn btn" data-da=".header__container, 1024, first" tabindex="1">Offiziellen
-                        Website</button>
+                    <div class="header__btn btn" data-da=".header__container, 1024, first" tabindex="1">Offiziellen
+                        Website</div>
                 </div>
             </div>
 
@@ -97,8 +97,97 @@
             </div>
         </div>
 
+        <button class="header__cart btn btn--shop-cart" id="shop-cart" data-cart-count="1">
+            <svg>
+                <use xlink:href="icons/sprite.svg#shop-cart"></use>
+            </svg>
+        </button>
+
     </div>
 
+    <script type="text/javascript">
+
+        document.querySelector('#shop-cart').addEventListener('click', function () {
+
+            const template = `
+
+                    <legend class="popup-cart__title">1 Produkt wurde dem Einkaufswagen hinzugefügt</legend>
+
+                    <ul class="cart-totals">
+
+                        <li class="cart-totals__item popup-cart__product">
+                            <div class="cart-totals__img">
+                                <picture><source srcset="image/product/original.webp" type="image/webp"><img src="image/product/original.png" alt="Original"></picture>
+                            </div>
+                            <div class="cart-totals__info">
+                                <span class="cart-totals__name">
+                                    QBRIX Solar QBRIX Solar QBRIX Solar
+                                </span>
+                                <span class="cart-totals__price">
+                                    69,99 EUR
+                                </span>
+                                <span class="cart-totals__quantity product-quantity">
+                                    <button class="product-quantity__btn increment"></button>
+                                    <input class="product-quantity__input" type="text" value="10" size="2">
+                                    <button class="product-quantity__btn decrement"></button>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="cart-totals__item popup-cart__product">
+                            <div class="cart-totals__img">
+                                <picture><source srcset="image/product/original.webp" type="image/webp"><img src="image/product/original.png" alt="Original"></picture>
+                            </div>
+                            <div class="cart-totals__info">
+                                <span class="cart-totals__name">
+                                    QBRIX Solar
+                                </span>
+                                <span class="cart-totals__price">
+                                    69,99 EUR
+                                </span>
+                                <span class="cart-totals__quantity product-quantity">
+                                    <button class="product-quantity__btn increment"></button>
+                                    <input class="product-quantity__input" type="text" value="10" size="2">
+                                    <button class="product-quantity__btn decrement"></button>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="cart-totals__item popup-cart__product">
+                            <div class="cart-totals__img">
+                                <picture><source srcset="image/product/original.webp" type="image/webp"><img src="image/product/original.png" alt="Original"></picture>
+                            </div>
+                            <div class="cart-totals__info">
+                                <span class="cart-totals__name">
+                                    QBRIX Solar
+                                </span>
+                                <span class="cart-totals__price">
+                                    69,99 EUR
+                                </span>
+                                <span class="cart-totals__quantity product-quantity">
+                                    <button class="product-quantity__btn increment"></button>
+                                    <input class="product-quantity__input" type="text" value="10" size="2">
+                                    <button class="product-quantity__btn decrement"></button>
+                                </span>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="popup-cart__footer">
+                        <a href="checkout" class="link link--follow">Zum Einkaufskorb gehen</a>
+                    </div>
+            `
+
+            Swal.fire({
+                position: 'bottom-end',
+                html: template,
+
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'form popup-cart',
+                    htmlContainer: 'form popup-cart__fieldset',
+                }
+            })
+        })
+    </script>
 </header>
 
     <main>
